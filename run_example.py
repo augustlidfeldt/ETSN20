@@ -1,10 +1,10 @@
 import grad_CAM_pipeline
 
 # Image directory
-img_dir = '/Users/ETSN20/images/day'
+img_dir = '/Users/august/ETSN20/images/day'
 
 # Put custom model and weights in same folder
-model_dir = '/Users/ETSN20/Tunnel_model.h5'
+model_dir = '/Users/august/ETSN20/Tunnel_model.h5'
 weight_dir = model_dir.split('.h5')[0] + '_weights.h5' # name of weights file should be like model name + _weights.h5
 
 # Use for custom model
