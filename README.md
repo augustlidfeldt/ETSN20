@@ -3,7 +3,7 @@ Project in Software Testing – ETSN20 Lund University
 
 This repository contains code for a project in the course ETSN20 during the Fall semester of 2020.
 
-## Setup and generating GradCAMs
+## Setup and generation of GradCAMs
 1. After downloading the repo and installing the requirements, open the [example file](https://github.com/augustlidfeldt/ETSN20/blob/main/run_example.py).
 
 2. In the run_example, set the correct file paths to the images and model in the downloaded project folder.
