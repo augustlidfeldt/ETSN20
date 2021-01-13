@@ -1,19 +1,27 @@
-# ETSN20
-Project in Software Testing – ETSN20 Lund University
+# Automated Grad-CAM generation for testing of image recognition models in an MLOps context 
 
-This repository contains code for a project in the course ETSN20 during the Fall semester of 2020.
+This repository contains source code and a replication package for a paper submitted to a workshop.
 
-## Setup and generation of GradCAMs
-1. After downloading the repo and installing the requirements, open the [example file](https://github.com/augustlidfeldt/ETSN20/blob/main/run_example.py).
+This code has been tested with **Python 3.7** and conda environments on MacOS and Win10.
 
-2. In the run_example, set the correct file paths to the images and model in the downloaded project folder.
+## Getting started with the default example
+1. Clone this repo.
+1. Install the requirements.
+```
+pip install -r requirements-37.txt
+```
+1. Run ```run_example.py``` with the following arguments to specify the default file paths.
+```
+python run_example.py --model-path "model/Tunnel_model.h5" --weights-path "model/Tunnel_model_weights.h5" --dataset-path "images/day"
+```
+1. Examine output files in the subfolder "images/day/Grad-CAMs"
+- Individual Grad-CAMs are created for each corresponding input file with the suffix -Grad-CAM
+- A combined Grad-CAMs is created in ```_combined_Grad-CAMs.jpg```
+- A combined image is created in ```_combined_images.jpg```
 
-3. If you want to run our tunnel model, leave the code as is. If you prefer running a pre-installed Keras model uncomment the last segment, and comment out the loading of the custom model.
-
-4. Run the run_example.py file. GradCAMs should be generated and put in a folder called GradCAMs in the source image folder.
-
-5. If you wish to run your own custom model, just change the image and model filepaths to the place were they're kept. Add your custom labels instead of the current ones.  Note that the weight file should be named as the model with the addition of "_weights.h5".
-
+## Running Grad-CAM generation on other Keras models
+1. Specify the locations of the model file, the weights file, and the input dataset using the command line arguments.
+1. Specify the labels used by the model in ```run_example.py```.
 
 ## Authors
 
@@ -21,8 +29,4 @@ This repository contains code for a project in the course ETSN20 during the Fall
 **Simon Åberg** - [simanaberg](https://github.com/simanaberg)
 **Ludwig Hedlund** - [luuddan](https://github.com/luuddan)
 **Arvid Ekblom** - [arvidekblom](https://github.com/arvideklbom)
-
-## Acknowledgments
-
-* Thanks to Markus Borg for supervising this project.
-
+** Markus Borg** - [mrksbrg](https://github.com/mrksbrg)
