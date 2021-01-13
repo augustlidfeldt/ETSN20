@@ -231,5 +231,5 @@ def run_pipeline(model_path, weights_path, dataset_path, labels=None, same_size_
 
     # Save the combined Grad-CAMs in the output folder
     os.chdir(output_dir)
-    cv2.imwrite('combined_Grad-CAMs.jpg', superimposed_img)
-    cv2.imwrite('combined_images.jpg', combined_img)
+    cv2.imwrite('_combined_Grad-CAMs.jpg', superimposed_img)
+    cv2.imwrite('_combined_images.jpg', combined_img)
