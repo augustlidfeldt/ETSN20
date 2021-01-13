@@ -12,16 +12,6 @@ def generate(model_path, weights_path, dataset_path):
     print("### Weights file located: " + weights_path)
     print("### Dataset folder located: " + dataset_path)
 
-    # Image directory
-    #img_dir = os.path.join('images', 'day')
-    #print(img_dir)
-
-    # Put custom model and weights in same folder
-    #model_file = os.path.join('model', 'Tunnel_model.h5')
-    #print(model_file)
-    #weight_file = model_file.split('.h5')[0] + '_weights.h5' # name of weights file should be like model name + _weights.h5
-    #print(weight_file)
-
     # Use for custom model
     labels = ['Empty', 'Person', 'Dog', 'Bike']
 
