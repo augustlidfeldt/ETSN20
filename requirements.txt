@@ -1,6 +1,7 @@
 absl-py @ file:///tmp/build/80754af9/absl-py_1607439979954/work
 astor==0.8.1
 certifi==2020.12.5
+click==7.1.2
 cycler==0.10.0
 gast==0.2.2
 google-pasta==0.2.0
