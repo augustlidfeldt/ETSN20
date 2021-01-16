@@ -29,4 +29,4 @@ python run_example.py --model-path "model/Tunnel_model.h5" --weights-path "model
 **Simon Åberg** - [simanaberg](https://github.com/simanaberg)
 **Ludwig Hedlund** - [luuddan](https://github.com/luuddan)
 **Arvid Ekblom** - [arvidekblom](https://github.com/arvideklbom)
-** Markus Borg** - [mrksbrg](https://github.com/mrksbrg)
+**Markus Borg** - [mrksbrg](https://github.com/mrksbrg)
